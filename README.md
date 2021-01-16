@@ -16,6 +16,10 @@
 [mac] $ docker-compose exec web yarn dev
 [mac] $ docker-compose exec web yarn watch
 ```
-
 ### Hello reactが表示されればおっけい
 * http://127.0.0.1:10080/
+
+### マイグレーション
+```
+php artisan migrate
+```
