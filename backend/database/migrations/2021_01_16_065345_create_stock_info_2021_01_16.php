@@ -32,6 +32,7 @@ class CreateStockInfo20210116 extends Migration
             $table->string('exchange_time_zone');
             $table->string('quote_type');
             $table->string('market');
+            $table->unsignedInteger('sector_id')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });
