@@ -16,6 +16,7 @@ class CreateStockPrice20210116 extends Migration
         Schema::create('stock_price', function (Blueprint $table) {
             $table->bigIncrements('stock_price_id');
             $table->unsignedInteger('stock_info_id');
+            $table->decimal('close', 9, 2);
             $table->decimal('previous_close', 9, 2);
             $table->decimal('open', 9, 2);
             $table->decimal('day_low', 9, 2);
